@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, html {
+  background: #3F3434;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-container {
+  background: #493E3E;
+  padding: 40px 60px;
+  border-radius: 5px;
+  box-shadow: 0 18px 31px #382929;
+  color: #fff;
+}
+
+.stats-heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  margin: -20px;
+}
+.stats__item {
+  text-align: center;
+  padding: 20px;
+}
+.stats__bar-container {
+  outline: none;
+  border-radius: 4px;
+  transition: box-shadow 200ms ease-in-out;
+}
+.stats__bar-container:focus {
+  box-shadow: #D5634E 0 0 0 2px;
+}
+.stats__bar {
+  background: #433737;
+  width: 65px;
+  height: 160px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 8px 0;
+  outline: none;
+}
+.stats__bar-progress {
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  bottom: 0;
+  background: #D5634E;
+}
+.stats__footer-text {
+  text-align: center;
+  margin-top: 30px;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=main.css.map */

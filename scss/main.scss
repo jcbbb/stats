@@ -1,0 +1,75 @@
+@import './vars';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+body, html {
+    background: $body-bg;
+    height: 100%;
+}
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stats-container {
+    background: $stats-bg;
+    padding: 40px 60px;
+    border-radius: 5px;
+    box-shadow: $shadow; 
+    color: #fff;
+}
+.stats-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.stats {
+    display: flex;
+    align-items: center;
+    margin: -20px;
+    &__item {
+        text-align: center;
+        padding: 20px;
+    }
+    &__bar-container {
+        outline: none;
+        border-radius: 4px;
+        transition: box-shadow 200ms ease-in-out;
+        &:focus {
+            box-shadow: $bar-progress-bg 0 0 0 2px;
+        }
+    }
+    &__bar {
+        background: $bar-bg;
+        width: 65px;
+        height: 160px;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 8px 0;
+        outline: none;
+    }
+    &__bar-progress {
+        position: absolute; 
+        height: 40%;
+        width: 100%;
+        bottom: 0;
+        background: $bar-progress-bg; 
+    }
+    &__footer-text {
+        text-align:center; 
+        margin-top: 30px;
+        opacity: 0.7;
+    }
+}
