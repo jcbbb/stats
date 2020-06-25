@@ -62,7 +62,6 @@ body, html {
     }
     &__bar-progress {
         position: absolute; 
-        height: 40%;
         width: 100%;
         bottom: 0;
         background: $bar-progress-bg; 
@@ -72,4 +71,19 @@ body, html {
         margin-top: 30px;
         opacity: 0.7;
     }
+}
+.p27-5 {
+    height: 27.5%;
+}
+.p33-5 {
+    height: 33.5%;
+}
+.p15-5 {
+    height: 15.5%;
+}
+.p12-5 {
+    height: 12.5%;
+}
+.p5-5 {
+    height: 5.5%;
 }
